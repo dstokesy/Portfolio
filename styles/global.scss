@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --colour-background: #262626;
+  --colour-text: #ffffff;
+  --gutter: 1rem;
+}
+
+html, body {
+  position:relative;
+  height:100%;
+  width:100%;
+  background: var(--colour-background);
+  color: var(--colour-text);
+}
+
+.font {
+  &-xs {
+    font-size: 1rem;
+  }
+
+  &-cursive {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+
+  &-fluid {
+    padding: 0 var(--gutter);
+  }
+}
+
+.row {
+  margin: 0 calc(var(--gutter) * -1);
+}
+
+.col {
+  padding: 0 var(--gutter);
+}

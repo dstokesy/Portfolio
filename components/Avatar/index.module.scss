@@ -1,0 +1,19 @@
+.wrapper {
+	position: relative;
+	display: inline-block;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		background: var(--colour-background);
+		background: linear-gradient(180deg, rgba(#262626, 0) 0%, rgba(#262626, 0.5) 35%, rgba(#262626, 1) 100%);
+	}
+}
+
+.avatar {
+	display: inline-block;
+}
