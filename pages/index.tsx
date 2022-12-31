@@ -20,9 +20,10 @@ export default function Home() {
                 <Avatar />
               </div>
               <h1 className={styles.heading + ' text-center'}>
-                <HeadingLine Line="Full stack web developer" SubLine="form Leeds."/>
+                <strong><HeadingLine Line="Daniel Stokes" /></strong><br/>
+                <HeadingLine Line="Full stack web developer" SubLine="from Leeds."/>
                 &nbsp;<HeadingLine Line="with 10 years experience."/>
-                &nbsp;<HeadingLine Line="Specialising in CSS, JavaScript, React & PHP" SubLine="along with cms and e-commerce"/>
+                &nbsp;<HeadingLine Line="Specialising in CSS, JavaScript, React & PHP" SubLine="along with cms and e-commerce projects" SubLinePos="static"/>
               </h1>
             </div>
           </div>

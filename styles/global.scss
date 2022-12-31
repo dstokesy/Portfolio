@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --colour-background: #262626;
-  --colour-text: #ffffff;
-  --gutter: 1rem;
+@layer base {
+  :root {
+    --colour-background: #F4F9FC;
+    --colour-text: #2c4473;
+    --colour-text-accent: #EF4A4D;
+    --gutter: 1rem;
+  }
 }
 
 html, body {
@@ -18,7 +21,15 @@ html, body {
 
 .font {
   &-xs {
-    font-size: 1rem;
+    font-size: 0.75rem;
+
+    @media (min-width: 520px) {
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
   }
 
   &-cursive {

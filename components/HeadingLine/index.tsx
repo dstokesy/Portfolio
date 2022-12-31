@@ -3,10 +3,12 @@ import styles from './index.module.scss'
 
 export default function HeadingLine({
   Line,
-  SubLine
+  SubLine,
+  SubLinePos
 }: {
   Line: React.ReactNode
   SubLine?: React.ReactNode
+  SubLinePos?: boolean
 }) {
 
 	if (SubLine) {
@@ -15,8 +17,8 @@ export default function HeadingLine({
 	      <span>
 	        {Line}
 	      </span>
-	      <span className={styles.annotation + ' font-xs font-cursive'}>
-	        <Image src="/arrow.svg" height={10} width={31} className={styles.annotation_arrow} />
+	      <span className={styles.annotation + ' ' + (SubLinePos === 'static' ? styles.annotation_static : '') + ' font-xs font-cursive'}>
+	        <Image src="/arrow.svg" height={10} width={31} className={styles.annotation_arrow + ' ' + (SubLinePos === 'static' ? styles.annotation_arrow_inline : '')} />
 	        {SubLine}
 	      </span>
 	    </span>

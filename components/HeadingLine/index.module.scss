@@ -4,11 +4,24 @@
 	left: 100%;
 	margin-left: 1.5rem;
 	white-space: nowrap;
+	color: var(--colour-text-accent);
+
+	&_static {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-left: 3.25rem;
+	}
 
 	&_arrow {
 		position: absolute;
 		top: 2px;	 
 	    left: -2.5rem;
 	    transform: rotate(25deg);
+
+	    &_inline {
+			top: 7px;
+			transform: rotate(0deg);
+	    }
 	}
 }
