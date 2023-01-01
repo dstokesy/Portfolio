@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --colour-background: #F4F9FC;
+    --colour-background: #f5fbff;
     --colour-text: #2c4473;
     --colour-text-accent: #EF4A4D;
     --gutter: 1rem;
@@ -15,7 +15,6 @@ html, body {
   position:relative;
   height:100%;
   width:100%;
-  background: var(--colour-background);
   color: var(--colour-text);
 }
 
@@ -45,12 +44,4 @@ html, body {
   &-fluid {
     padding: 0 var(--gutter);
   }
-}
-
-.row {
-  margin: 0 calc(var(--gutter) * -1);
-}
-
-.col {
-  padding: 0 var(--gutter);
 }
