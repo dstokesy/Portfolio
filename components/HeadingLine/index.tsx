@@ -17,8 +17,8 @@ export default function HeadingLine({
 	      <span>
 	        {Line}
 	      </span>
-	      <span className={styles.annotation + ' ' + (SubLinePos === 'static' ? styles.annotation_static : '') + ' font-xs font-cursive'}>
-	        <Image src="/arrow.svg" height={10} width={31} className={styles.annotation_arrow + ' ' + (SubLinePos === 'static' ? styles.annotation_arrow_inline : '')} />
+	      <span className={styles.annotation + ' ' + (SubLinePos === 'left' ? styles.annotation_left : '') + ' font-xs font-cursive'}>
+	        <Image src="/arrow.svg" height={10} width={31} className={styles.annotation_arrow + ' ' + (SubLinePos === 'left' ? styles.annotation_arrow_left : '')} />
 	        {SubLine}
 	      </span>
 	    </span>

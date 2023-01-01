@@ -12,25 +12,22 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <header className="pt-6">
+      <header className="py-6">
         <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="mb-6 text-center">
-                <Avatar />
-              </div>
-              <h1 className={styles.heading + ' text-center'}>
-                <strong><HeadingLine Line="Daniel Stokes" /></strong><br/>
-                <HeadingLine Line="Full stack web developer" SubLine="from Leeds."/>
-                &nbsp;<HeadingLine Line="with 10 years experience."/>
-                &nbsp;<HeadingLine Line="Specialising in CSS, JavaScript, React & PHP" SubLine="along with cms and e-commerce projects" SubLinePos="static"/>
-              </h1>
-            </div>
+          <div className="mb-6 text-center">
+            <Avatar />
           </div>
+          <h1 className={styles.heading + ' text-center'}>
+            <strong><HeadingLine Line="Daniel Stokes" /></strong><br/>
+            <HeadingLine Line="Full stack web developer" SubLine="based in Leeds" SubLinePos="left"/><br/>
+            <HeadingLine Line="With 10 years experience"/><br/>
+            <HeadingLine Line="Specialising in JavaScript, React,"/><br/>
+            <HeadingLine Line="CSS & PHP" SubLine="plus CMS and E-commerce"/>
+          </h1>
         </div>
       </header>
       <div className="container-fluid">
-        <h2>test</h2>
+        
       </div>
     </Layout>
   )

@@ -2,26 +2,38 @@
 	position: absolute;
 	top: 100%;
 	left: 100%;
-	margin-left: 1.5rem;
-	white-space: nowrap;
 	color: var(--colour-text-accent);
+	width: 80px;
+	line-height: 1.5;
+	margin-top: 0.3rem;
 
-	&_static {
-		position: relative;
-		top: 0;
-		left: 0;
-		margin-left: 3.25rem;
+	@media (min-width: 520px) {
+		margin-left: 1.5rem;
+		white-space: nowrap;
+		width: auto;
+	}
+
+	&_left {
+		left: auto;
+		right: 0;
+		margin-left: 0;
+		margin-right: 3rem;
 	}
 
 	&_arrow {
 		position: absolute;
-		top: 2px;	 
+		top: -1px;	 
 	    left: -2.5rem;
 	    transform: rotate(25deg);
 
-	    &_inline {
-			top: 7px;
-			transform: rotate(0deg);
+	    @media (min-width: 520px) {
+	    	top: 2px;
 	    }
+
+	    &_left {
+	    	left: auto;
+	    	right: -2.5rem;
+			transform: scaleX(-1) rotate(25deg);
+		}
 	}
 }
