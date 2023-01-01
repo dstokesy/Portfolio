@@ -5,7 +5,7 @@ export default function Avatar() {
 
 	return (
 		<div className={styles.wrapper}>
-			<Image src="/avatar.svg" height={250} width={250} className={styles.avatar} />
+			<Image src="/avatar.svg" height={250} width={250} alt="Daniel Stokes" className={styles.avatar} />
 		</div>
 	)
 }

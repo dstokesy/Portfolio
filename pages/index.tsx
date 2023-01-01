@@ -6,9 +6,9 @@ import styles from './index.module.scss'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-export default function Home() {
+export default function Index() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>

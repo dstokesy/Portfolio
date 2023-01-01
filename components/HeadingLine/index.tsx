@@ -8,17 +8,17 @@ export default function HeadingLine({
 }: {
   Line: React.ReactNode
   SubLine?: React.ReactNode
-  SubLinePos?: boolean
+  SubLinePos?: string
 }) {
 
 	if (SubLine) {
 		return (
-	  	<span class="relative">
+	  	<span className="relative">
 	      <span>
 	        {Line}
 	      </span>
 	      <span className={styles.annotation + ' ' + (SubLinePos === 'left' ? styles.annotation_left : '') + ' font-xs font-cursive'}>
-	        <Image src="/arrow.svg" height={10} width={31} className={styles.annotation_arrow + ' ' + (SubLinePos === 'left' ? styles.annotation_arrow_left : '')} />
+	        <Image src="/arrow.svg" height={10} width={31} alt="Arrow" className={styles.annotation_arrow + ' ' + (SubLinePos === 'left' ? styles.annotation_arrow_left : '')} />
 	        {SubLine}
 	      </span>
 	    </span>
