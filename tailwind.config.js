@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-cormorant)', ...fontFamily.sans],
+        dancing: ['Dancing Script', 'cursive'],
       },
     },
   },
