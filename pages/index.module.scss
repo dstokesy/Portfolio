@@ -15,4 +15,12 @@
 		font-size: 3rem;
 		line-height: 1.5;
 	}
+
+	&_two {
+		font-size: 1.25rem;
+
+		@media (min-width: 650px) {
+			font-size: 2rem;
+		}
+	}
 }
