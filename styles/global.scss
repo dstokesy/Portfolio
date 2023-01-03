@@ -8,6 +8,9 @@
     --colour-text: #2c4473;
     --colour-text-accent: #EF4A4D;
     --gutter: 1rem;
+    --font-body: 'Cormorant Infant', serif;
+    --font-cursive: 'Dancing Script', cursive;
+
   }
 }
 
@@ -15,24 +18,21 @@ html, body {
   position:relative;
   height:100%;
   width:100%;
+  font-family: var(--font-body);
   color: var(--colour-text);
 }
 
 .font {
   &-xs {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 
     @media (min-width: 520px) {
-      font-size: 0.85rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
   }
 
   &-cursive {
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-cursive);
   }
 }
 
