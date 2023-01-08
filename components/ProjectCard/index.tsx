@@ -8,14 +8,14 @@ export default function ProjectCard({
   ImagePath,
   Id
 }: {
-  Title: String,
-  Categories: String,
-  ImagePath: String,
-  Id: String
+  Title: string,
+  Categories: string,
+  ImagePath: string,
+  Id: string
 }) {
 	return (
 		<Link href={`/projects/${Id}`} className="block mb-4 text-center">
-			<Image src={ImagePath} height={250} width={250} alt="Daniel Stokes" className={styles.img} />
+			<Image src={ImagePath} height={166} width={174} alt="Daniel Stokes" className={styles.img} />
 			<div>{Title}</div>
 			<div className="text-xs">{Categories}</div>
 		</Link>

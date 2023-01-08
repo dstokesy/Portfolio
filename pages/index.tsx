@@ -14,13 +14,13 @@ export default function Index({
   allProjects
 }: {
   allContent: {
-    priority: string
+    priority: number
     title: string
     content: string
     id: string
   },
   allProjects: {
-    priority: string
+    priority: number
     title: string
     categories: string
     image: string
@@ -53,7 +53,7 @@ export default function Index({
 
           <div className="pb-12">
             <h2 className={styles.heading_two}>Projects</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {allProjects.map(({ id, priority, title, categories, image, content }) => (
                 <div key={id} className="col">
                   <ProjectCard Title={title} Categories={categories} ImagePath={image} Id={id} />
