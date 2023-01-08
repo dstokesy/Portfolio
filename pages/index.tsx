@@ -55,8 +55,8 @@ export default function Index({
             <h2 className={styles.heading_two}>Projects</h2>
             <div className="grid grid-cols-3 gap-4">
               {allProjects.map(({ id, priority, title, categories, image, content }) => (
-                <div className="col">
-                  <ProjectCard Title={title} Categories={categories} ImagePath={image} Link={`/projects/${id}`} />
+                <div key={id} className="col">
+                  <ProjectCard Title={title} Categories={categories} ImagePath={image} Id={id} />
                 </div>
               ))}
             </div>
