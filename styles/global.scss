@@ -36,6 +36,10 @@ html, body {
   }
 }
 
+.color-accent {
+  color: var(--colour-text-accent);
+}
+
 .container {
   max-width: 780px;
   margin: 0 auto;
