@@ -1,5 +1,5 @@
 ---
-title: 'Weather'
+title: 'Weather/Movie DB'
 categories: '#react #nextJS #graphQl'
 image: '/projects/mercedes.jpg'
 priority: 1

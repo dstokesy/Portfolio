@@ -9,10 +9,7 @@ import { getSortedProjectsData } from '../lib/projects'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-export default function Index({
-  allContent,
-  allProjects
-}: {
+interface IPageProps {
   allContent: {
     priority: number
     title: string
@@ -27,7 +24,9 @@ export default function Index({
     content: string
     id: string
   }[]
-}) {
+};
+
+export default function Index({allContent, allProjects}: IPageProps) {
   return (
     <Layout>
       <Head>
@@ -38,7 +37,7 @@ export default function Index({
           <div className="mb-6 text-center">
             <Avatar />
           </div>
-          <h1 className={styles.heading + ' text-center'}>
+          <h1 className={`${styles.heading} text-center`}>
             <strong><HeadingLine Line="Daniel Stokes" /></strong><br/>
             <HeadingLine Line="Full stack web developer" SubLine="based in Leeds" SubLinePos="left" /><br/>
             <HeadingLine Line="With 10 years experience" /><br/>
@@ -77,7 +76,7 @@ export default function Index({
                 </div>
               </div>
 
-              {i + 1 < allContent.length ? <hr/> : ''}
+              {i + 1 < allContent.length && <hr/>}
             </div>
           ))}
 

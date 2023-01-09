@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './index.module.scss'
+import cx from 'classnames';
 
 export default function HeadingLine({
   Line,
@@ -12,12 +13,14 @@ export default function HeadingLine({
 }) {
 
 	if (SubLine) {
+		const stylesAl = (SubLinePos === 'left' ? styles.annotation_left : '');
+
 		return (
 	  	<span className="relative">
 	      <span>
 	        {Line}
 	      </span>
-	      <span className={styles.annotation + ' ' + (SubLinePos === 'left' ? styles.annotation_left : '') + ' font-xs font-cursive'}>
+	      <span className={cx(styles.annotation, 'font-xs font-cursive', (SubLinePos === 'left' ? styles.annotation_left : ''))}>
 	        <Image src="/arrow.svg" height={10} width={31} alt="Arrow" className={styles.annotation_arrow + ' ' + (SubLinePos === 'left' ? styles.annotation_arrow_left : '')} />
 	        {SubLine}
 	      </span>
