@@ -18,7 +18,7 @@ export default function Index({
     title: string
     content: string
     id: string
-  },
+  }[],
   allProjects: {
     priority: number
     title: string
@@ -54,9 +54,9 @@ export default function Index({
           <div className="pb-12">
             <h2 className={styles.heading_two}>Projects</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {allProjects.map(({ id, priority, title, categories, image, content }) => (
-                <div key={id} className="col">
-                  <ProjectCard Title={title} Categories={categories} ImagePath={image} Id={id} />
+              {allProjects.map((project) => (
+                <div key={project.id} className="col">
+                  <ProjectCard Title={project.title} Categories={project.categories} ImagePath={project.image} Id={project.id} />
                 </div>
               ))}
             </div>
@@ -64,15 +64,15 @@ export default function Index({
 
           <hr/>
 
-          {allContent.map(({ id, priority, title, content }, i) => (
-            <div key={id}>
+          {allContent.map((content, i) => (
+            <div key={content.id}>
               <div className="pt-12 pb-12">
                 <div className="grid grid-cols-12 gap-4">
                   <div className="col-start-1 col-end-13 sm:col-start-1 sm:col-end-5">
-                    <h2 className={styles.heading_two}>{title}</h2>
+                    <h2 className={styles.heading_two}>{content.title}</h2>
                   </div>
                   <div className="col-start-1 col-end-13 sm:col-start-5 sm:col-end-13">
-                    <p>{content}</p>
+                    <p>{content.content}</p>
                   </div>
                 </div>
               </div>
