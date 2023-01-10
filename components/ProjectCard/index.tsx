@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 type Project = {
-	priority: number
 	title: string
 	categories: string
 	image: string

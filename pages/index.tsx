@@ -4,29 +4,10 @@ import Avatar from '../components/Avatar/index'
 import HeadingLine from '../components/HeadingLine/index'
 import ProjectCard from '../components/ProjectCard/index'
 import styles from './index.module.scss'
-import { getSortedContentData } from '../lib/content'
-import { getSortedProjectsData } from '../lib/projects'
-import Link from 'next/link'
-import { GetStaticProps } from 'next'
+import allProjects from '../content/projects'
+import allContent from '../content/home'
 
-interface IPageProps {
-  allContent: {
-    priority: number
-    title: string
-    content: string
-    id: string
-  }[],
-  allProjects: {
-    priority: number
-    title: string
-    categories: string
-    image: string
-    content: string
-    id: string
-  }[]
-};
-
-export default function Index({allContent, allProjects}: IPageProps) {
+export default function Index() {
   return (
     <Layout>
       <Head>
@@ -64,7 +45,7 @@ export default function Index({allContent, allProjects}: IPageProps) {
           <hr/>
 
           {allContent.map((content, i) => (
-            <div key={content.id}>
+            <div key={i}>
               <div className="pt-12 pb-12">
                 <div className="grid grid-cols-12 gap-4">
                   <div className="col-start-1 col-end-13 sm:col-start-1 sm:col-end-5">
@@ -84,15 +65,4 @@ export default function Index({allContent, allProjects}: IPageProps) {
       </section>
     </Layout>
   )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-  const allContent = getSortedContentData()
-  const allProjects = getSortedProjectsData()
-  return {
-    props: {
-      allContent,
-      allProjects
-    }
-  }
 }
