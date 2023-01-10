@@ -38,11 +38,11 @@ export default function Index({allContent, allProjects}: IPageProps) {
             <Avatar />
           </div>
           <h1 className={`${styles.heading} text-center`}>
-            <strong><HeadingLine Line="Daniel Stokes" /></strong><br/>
-            <HeadingLine Line="Full stack web developer" SubLine="based in Leeds" SubLinePos="left" /><br/>
-            <HeadingLine Line="With 10 years experience" /><br/>
-            <HeadingLine Line="Specialising in JavaScript, React," /><br/>
-            <HeadingLine Line="CSS & PHP" SubLine="plus CMS and E-commerce" />
+            <strong><HeadingLine>Daniel Stokes</HeadingLine></strong><br/>
+            <HeadingLine subLine="based in Leeds" subLinePos="left">Full stack web developer</HeadingLine><br/>
+            <HeadingLine>With 10 years experience</HeadingLine><br/>
+            <HeadingLine>Specialising in JavaScript, React,</HeadingLine><br/>
+            <HeadingLine subLine="plus CMS and E-commerce">CSS & PHP</HeadingLine>
           </h1>
         </div>
       </header>
@@ -55,7 +55,7 @@ export default function Index({allContent, allProjects}: IPageProps) {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {allProjects.map((project) => (
                 <div key={project.id} className="col">
-                  <ProjectCard Title={project.title} Categories={project.categories} ImagePath={project.image} Id={project.id} />
+                  <ProjectCard project={project} />
                 </div>
               ))}
             </div>

@@ -3,32 +3,30 @@ import styles from './index.module.scss'
 import cx from 'classnames';
 
 export default function HeadingLine({
-  Line,
-  SubLine,
-  SubLinePos
+	children,
+  subLine,
+  subLinePos
 }: {
-  Line: React.ReactNode
-  SubLine?: React.ReactNode
-  SubLinePos?: string
+  children: React.ReactNode
+  subLine?: React.ReactNode
+  subLinePos?: string
 }) {
 
-	if (SubLine) {
-		const stylesAl = (SubLinePos === 'left' ? styles.annotation_left : '');
-
+	if (subLine) {
 		return (
 	  	<span className="relative">
 	      <span>
-	        {Line}
+	        {children}
 	      </span>
-	      <span className={cx(styles.annotation, 'font-xs font-cursive', (SubLinePos === 'left' ? styles.annotation_left : ''))}>
-	        <Image src="/arrow.svg" height={10} width={31} alt="Arrow" className={styles.annotation_arrow + ' ' + (SubLinePos === 'left' ? styles.annotation_arrow_left : '')} />
-	        {SubLine}
+	      <span className={cx(styles.annotation, 'font-xs font-cursive', (subLinePos === 'left' ? styles.annotation_left : ''))}>
+	        <Image src="/arrow.svg" height={10} width={31} alt="Arrow" className={styles.annotation_arrow + ' ' + (subLinePos === 'left' ? styles.annotation_arrow_left : '')} />
+	        {subLine}
 	      </span>
 	    </span>
 	  )
 	} else {
 		return (
-			<span>{Line}</span>
+			<span>{children}</span>
 		);
 	}
 }
