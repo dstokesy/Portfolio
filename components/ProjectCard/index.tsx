@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type Project = {
+type ProjectType = {
 	title: string
 	categories: string
 	image: string
@@ -10,7 +10,7 @@ type Project = {
 	id: string
 };
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({ project }: { project: ProjectType }) {
 	return (
 		<Link href={`/projects/${project.id}`} className="block mb-4 text-center">
 			<Image src={project.image} height={166} width={174} alt="Daniel Stokes" className={styles.img} />
