@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 	return (
 		<Link href={`/projects/${project.id}`} className="block mb-4 text-center">
 			<Image src={project.image} height={166} width={174} alt="Daniel Stokes" className={styles.img} />
-			<div class={styles.title}>{project.title}</div>
+			<div className={styles.title}>{project.title}</div>
 			<div className={`${styles.subtitle} font-cursive`}>{project.categories}</div>
 		</Link>
 	);
