@@ -9,7 +9,7 @@
     --colour-text-accent: #EF4A4D;
     --gutter: 1rem;
     --font-body: 'Cormorant Infant', serif;
-    --font-cursive: 'Dancing Script', cursive;
+    --font-cursive: 'Caveat', cursive;
 
   }
 }
@@ -20,6 +20,10 @@ html, body {
   width:100%;
   font-family: var(--font-body);
   color: var(--colour-text);
+}
+
+p {
+  font-size: 1.125rem;
 }
 
 .font {
