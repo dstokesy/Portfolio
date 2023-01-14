@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import styles from './index.module.scss'
 
-export default function BounceSection({children}: {
+export default function PopInSection({children}: {
   children: React.ReactNode
 }) {
 	const [isVisible, setVisible] = useState(false)

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../layouts/default'
 import Avatar from '../components/Avatar/index'
 import HeadingLine from '../components/HeadingLine/index'
-import BounceSection from '../components/BounceSection/index'
+import PopInSection from '../components/PopInSection/index'
 import FadeSection from '../components/FadeSection/index'
 import ProjectCard from '../components/ProjectCard/index'
 import ContentSection from '../components/ContentSection/index'
@@ -19,7 +19,9 @@ export default function Index() {
       <header className="py-6">
         <div className="container">
           <div className="mb-6 text-center">
-            <Avatar />
+            <PopInSection>
+              <Avatar />
+            </PopInSection>
           </div>
           <FadeSection>
             <h1 className={`${styles.heading} text-center`}>
