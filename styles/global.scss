@@ -6,18 +6,18 @@
   :root {
     --colour-background: #f5fbff;
     --colour-text: #2c4473;
-    --colour-text-accent: #EF4A4D;
+    --colour-text-accent: #ef4a4d;
     --gutter: 1rem;
-    --font-body: 'Cormorant Infant', serif;
-    --font-cursive: 'Caveat', cursive;
-
+    --font-body: "Cormorant Infant", serif;
+    --font-cursive: "Caveat", cursive;
   }
 }
 
-html, body {
-  position:relative;
-  height:100%;
-  width:100%;
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
   font-family: var(--font-body);
   color: var(--colour-text);
 }

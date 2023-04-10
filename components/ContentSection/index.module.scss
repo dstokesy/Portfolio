@@ -1,24 +1,23 @@
 .section {
-	opacity: 0;
-	transform: translateY(20vh);
-	visibility: hidden;
-	transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
-	will-change: opacity, transform, visibility;
-	
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
 }
 
 .section_visible {
-	opacity: 1;
-	transform: none;
-	visibility: visible;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
-
 .heading {
-	margin: 0 0 2rem;
-	font-size: 1.25rem;
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
 
-	@media (min-width: 650px) {
-		font-size: 2rem;
-	}
+  @media (min-width: 650px) {
+    font-size: 2rem;
+  }
 }

@@ -1,27 +1,26 @@
 .heading {
-	font-size: 1.25rem;
-	line-height: 2.5;
+  font-size: 1.75rem;
+  line-height: 2;
 
-	@media (min-width: 520px) {
-		font-size: 1.75rem;
-		line-height: 2;
-	}
+  @media (min-width: 520px) {
+    line-height: 2;
+  }
 
-	@media (min-width: 650px) {
-		font-size: 2.25rem;
-	}
+  @media (min-width: 650px) {
+    font-size: 2.25rem;
+  }
 
-	@media (min-width: 768px) {
-		font-size: 3rem;
-		line-height: 1.5;
-	}
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
 
-	&_two {
-		margin: 0 0 2rem;
-		font-size: 1.25rem;
+  &_two {
+    margin: 0 0 2rem;
+    font-size: 1.25rem;
 
-		@media (min-width: 650px) {
-			font-size: 2rem;
-		}
-	}
+    @media (min-width: 650px) {
+      font-size: 2rem;
+    }
+  }
 }
