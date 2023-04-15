@@ -3,9 +3,11 @@ const projects = [
     id: "movie",
     title: "Movie DB",
     categories: "React, Next.js",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/movie-db.png",
+    logo: "/projects/logos/movie-db.png",
+    images: ["/projects/movie-db-mobile.png", "/projects/movie-db-desktop.jpg"],
+    github: "https://github.com/dstokesy/Movie-DB",
+    website: "http://movie-db-dstokesy.vercel.app",
     content: {
       title: "Details",
       content:
@@ -16,9 +18,14 @@ const projects = [
     id: "cms",
     title: "Headless CMS",
     categories: "React, Next.js",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/headless-cms.png",
+    logo: "/projects/logos/headless-cms.png",
+    images: [
+      "/projects/headless-cms.png",
+      "/projects/headless-cms-october.png",
+    ],
+    github: "https://github.com/dstokesy/Headless-CMS",
+    website: "https://headless-cms-dstokesy.vercel.app",
     content: {
       title: "Details",
       content:
@@ -29,9 +36,10 @@ const projects = [
     id: "mercedes",
     title: "Mercedes Benz UK Careers",
     categories: "October Cms",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/mercedes.png",
+    logo: "/projects/logos/mercedes.png",
+    images: ["/projects/mercedes.jpg", "/projects/mercedes-desktop.jpg"],
+    website: "https://careers.mercedes-benz.co.uk",
     content: {
       title: "Details",
       content:
@@ -42,10 +50,9 @@ const projects = [
     id: "surridge",
     title: "Surridge Sport",
     categories: "October Cms, E-commerce, Franchising",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
-    github: "https://www.github.com",
+    thumb: "/projects/logos/surridge.png",
+    logo: "/projects/logos/surridge.png",
+    images: ["/projects/surridge-mobile.png", "/projects/surridge-desktop.png"],
     website: "https://www.surridgesport.com",
     content: {
       title: "Details",
@@ -57,9 +64,12 @@ const projects = [
     id: "sanctuary",
     title: "Sanctuary Bathrooms",
     categories: "October Cms, E-commerce",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/sanctuary.png",
+    logo: "/projects/logos/sanctuary.png",
+    images: [
+      "/projects/sanctuary-mobile.png",
+      "/projects/sanctuary-desktop.png",
+    ],
     content: {
       title: "Details",
       content:
@@ -70,9 +80,10 @@ const projects = [
     id: "rightfuelcard",
     title: "Right Fuel Card",
     categories: "October Cms, Google Maps",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/rfc.png",
+    logo: "/projects/logos/rfc.png",
+    images: ["/projects/rfc-mobile.png", "/projects/rfc-desktop.png"],
+    website: "https://www.rightfuelcard.co.uk",
     content: {
       title: "Details",
       content:
@@ -83,9 +94,10 @@ const projects = [
     id: "gf",
     title: "Glamour Fans",
     categories: "React",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/gf.png",
+    logo: "/projects/logos/gf.png",
+    images: ["/projects/gf-mobile.png", "/projects/gf-desktop.png"],
+    website: "https://www.glamourfans.com",
     content: {
       title: "Details",
       content:
@@ -96,9 +108,9 @@ const projects = [
     id: "form",
     title: "Form Builder Plugin",
     categories: "October Cms, Plugin",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/october.png",
+    logo: "/projects/logos/october.png",
+    github: "https://github.com/dstokesy/Form-Builder-Plugin",
     content: {
       title: "Details",
       content:
@@ -109,9 +121,9 @@ const projects = [
     id: "franchise",
     title: "Franchise Plugin",
     categories: "October Cms, Plugin",
-    thumb: "/projects/mercedes.jpg",
-    logo: "/projects/mercedes.jpg",
-    images: ["/projects/mercedes.jpg", "/projects/mercedes.jpg"],
+    thumb: "/projects/logos/october.png",
+    logo: "/projects/logos/october.png",
+    github: "https://github.com/dstokesy/Franchise-Plugin",
     content: {
       title: "Details",
       content:

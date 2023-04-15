@@ -1,9 +1,11 @@
 .img {
   display: block;
-  max-width: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  padding: 2rem;
   margin: 0 auto 1rem;
+  object-fit: contain;
+  border: 2px solid var(--colour-text);
+  background-color: #fff;
 }
 
 .title {

@@ -5,7 +5,7 @@ import ProjectType from "./../../types/Project";
 
 export default function ProjectCard({ project }: { project: ProjectType }) {
   return (
-    <Link href={`/projects/${project.id}`} className="block mb-4 text-center">
+    <Link href={`/projects/${project.id}`} className="block mb-8 text-center">
       <Image
         src={project.thumb}
         height={166}
