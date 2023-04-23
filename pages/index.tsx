@@ -20,7 +20,7 @@ export default function Index() {
         <div className="container">
           <div className="mb-6 text-center">
             <PopInSection>
-              <Avatar path="/avatar.svg" title="Daniel Stokes" />
+              <Avatar path="/avatar.svg" shadow title="Daniel Stokes" />
             </PopInSection>
           </div>
           <FadeSection>

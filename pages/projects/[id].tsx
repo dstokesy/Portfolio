@@ -28,7 +28,7 @@ const Page: React.FC<IPageData> = (props) => {
       <header className="py-6">
         <div className="container">
           <div className="mb-6 text-center">
-            <PopInSection>
+            <PopInSection disablePadding>
               <Avatar path={project.logo} title={project.title} />
             </PopInSection>
           </div>
@@ -45,7 +45,9 @@ const Page: React.FC<IPageData> = (props) => {
 
           <section>
             <div className="container">
-              <ProjectLinks project={project} />
+              <FadeSection>
+                <ProjectLinks project={project} />
+              </FadeSection>
 
               <FadeSection>
                 <ContentSection content={project.content} />
@@ -54,14 +56,14 @@ const Page: React.FC<IPageData> = (props) => {
 
               <FadeSection>
                 <div className="pt-20 pb-20">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 gap-4">
                     {project.images &&
                       project.images.map((image, key) => (
-                        <div key={key}>
+                        <div key={key} className="text-center mb-4">
                           <Image
                             src={image}
-                            height={250}
-                            width={350}
+                            height={505}
+                            width={716}
                             alt={project.title}
                             className={styles.avatar}
                           />

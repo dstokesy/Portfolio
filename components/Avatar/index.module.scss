@@ -1,24 +1,31 @@
 .wrapper {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 50px;
-		background: #F4F9FC;
-		background: linear-gradient(180deg, rgba(#F4F9FC, 0) 0%, rgba(#F4F9FC, 0.5) 35%, rgba(#F4F9FC, 1) 100%);
-	}
+  &_shadow {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: #f4f9fc;
+      background: linear-gradient(
+        180deg,
+        rgba(#f4f9fc, 0) 0%,
+        rgba(#f4f9fc, 0.5) 35%,
+        rgba(#f4f9fc, 1) 100%
+      );
+    }
+  }
 }
 
 .avatar {
-	display: inline-block;
-	width: 200px;
+  display: inline-block;
+  width: 200px;
 
-	@media (min-width: 520px) {
-		width: 250px;
-	}
+  @media (min-width: 520px) {
+    width: 250px;
+  }
 }

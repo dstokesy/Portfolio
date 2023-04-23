@@ -1,3 +1,4 @@
+import xss from "xss";
 import styles from "./index.module.scss";
 import ContentType from "./../../types/Content";
 
@@ -9,7 +10,10 @@ export default function ContentSection({ content }: { content: ContentType }) {
           <h2 className={styles.heading}>{content.title}</h2>
         </div>
         <div className="col-start-1 col-end-13 sm:col-start-5 sm:col-end-13">
-          <p>{content.content}</p>
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: xss(content.content) }}
+          ></div>
         </div>
       </div>
     </div>
