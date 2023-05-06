@@ -14,7 +14,11 @@ export default function PopInSection({
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      });
     });
 
     const currentRef = ref?.current;

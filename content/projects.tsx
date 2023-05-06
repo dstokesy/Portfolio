@@ -67,6 +67,7 @@ const projects = [
     thumb: "/projects/logos/sanctuary.png",
     logo: "/projects/logos/sanctuary.png",
     images: ["/projects/sanctuary-desktop.png"],
+    website: "https://www.sanctuary-bathrooms.co.uk",
     content: {
       title: "Details",
       content:
