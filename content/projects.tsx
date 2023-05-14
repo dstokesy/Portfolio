@@ -39,7 +39,7 @@ const projects = [
     thumb: "/projects/logos/mercedes.png",
     logo: "/projects/logos/mercedes.png",
     images: ["/projects/mercedes-desktop.jpg"],
-    website: "https://careers.mercedes-benz.co.uk",
+    website: "https://bit.ly/44VQ7cq",
     content: {
       title: "Details",
       content:
@@ -53,7 +53,7 @@ const projects = [
     thumb: "/projects/logos/surridge.png",
     logo: "/projects/logos/surridge.png",
     images: ["/projects/surridge-desktop.png"],
-    website: "https://www.surridgesport.com",
+    website: "https://bit.ly/3O8vNi7",
     content: {
       title: "Details",
       content:
@@ -67,7 +67,7 @@ const projects = [
     thumb: "/projects/logos/sanctuary.png",
     logo: "/projects/logos/sanctuary.png",
     images: ["/projects/sanctuary-desktop.png"],
-    website: "https://www.sanctuary-bathrooms.co.uk",
+    website: "https://bit.ly/3O9zWlU",
     content: {
       title: "Details",
       content:
@@ -81,7 +81,7 @@ const projects = [
     thumb: "/projects/logos/rfc.png",
     logo: "/projects/logos/rfc.png",
     images: ["/projects/rfc-desktop.png"],
-    website: "https://www.rightfuelcard.co.uk",
+    website: "https://bit.ly/3MrLn7f",
     content: {
       title: "Details",
       content:
@@ -95,7 +95,7 @@ const projects = [
     thumb: "/projects/logos/gf.png",
     logo: "/projects/logos/gf.png",
     images: ["/projects/gf-desktop.png"],
-    website: "https://www.glamourfans.com",
+    website: "https://bit.ly/3W3wJWH",
     content: {
       title: "Details",
       content:
