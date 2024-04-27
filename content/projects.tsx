@@ -2,7 +2,7 @@ const projects = [
   {
     id: "skybet",
     title: "Sky Bet",
-    categories: "React, PHP, K8, Chef",
+    categories: "React, PHP, GraphQL, K8, Chef",
     thumb: "/projects/logos/sbg.png",
     logo: "/projects/logos/sbg.png",
     images: ["/projects/betslip.png", "/projects/match5.png"],
@@ -16,7 +16,7 @@ const projects = [
   {
     id: "betfair",
     title: "Betfair",
-    categories: "React Native, Redux, Node JS, Chef",
+    categories: "React Native, Redux, GraphQL, Node JS, Chef",
     thumb: "/projects/logos/bf.png",
     logo: "/projects/logos/bf.png",
     images: ["/projects/betfair.png"],
