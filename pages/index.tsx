@@ -30,12 +30,12 @@ export default function Index() {
               </strong>
               <br />
               <HeadingLine subLine="based in Leeds" subLinePos="left">
-                Full stack web developer
+                Software Engineer
               </HeadingLine>
               <br />
-              <HeadingLine>With 10 years experience</HeadingLine>
+              <HeadingLine>With 10+ years experience</HeadingLine>
               <br />
-              <HeadingLine>Specialising in JavaScript, React,</HeadingLine>
+              <HeadingLine>Specialising in JavaScript, React, React Native, Redux,</HeadingLine>
               <br />
               <HeadingLine subLine="plus CMS and E-commerce">
                 CSS & PHP

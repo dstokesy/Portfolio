@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "./default.module.scss";
 
-export const siteTitle = "Daniel Stokes Full Stack Web Developer";
+export const siteTitle = "Daniel Stokes Software Engineer";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Head>
         <meta
           name="description"
-          content="Daniel Stokes Full Stack Web Developer, Leeds"
+          content="Daniel Stokes Software Engineer, Leeds"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />

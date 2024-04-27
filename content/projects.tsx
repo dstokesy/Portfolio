@@ -1,5 +1,33 @@
 const projects = [
   {
+    id: "skybet",
+    title: "Sky Bet",
+    categories: "React, PHP, K8, Chef",
+    thumb: "/projects/logos/sbg.png",
+    logo: "/projects/logos/sbg.png",
+    images: ["/projects/betslip.png", "/projects/match5.png"],
+    website: "https://bit.ly/4dfiYMY",
+    content: {
+      title: "Details",
+      content:
+        "<p>At my current employer Flutter I have worked on the Sky Bet website in both the presentation team and transactions team.</p><p>During my team in the presentation team I worked with React on the competition and event pages adding new features such as fliters and working with React Relay to fix bugs when updating odds on betting markets. In addition to this I also worked on the landing pages for the new Match 5 game ensuring the pages were highly optimised for SEO.</p><p>After impressing in the presentation team I was moved to the transactions team to work on more complex parts of the SKy Bet website such as cashouts, acca freeze and bet tracking. This meant working with a variety of API's to request cashout prices, odds and data on in-play events. This was done using both React and PHP. Working in the transactions team also allowed me to improve my dev ops skills particularly in Docker and Kubernetes.</p>",
+    },
+  },
+  {
+    id: "betfair",
+    title: "Betfair",
+    categories: "React Native, Redux, Node JS, Chef",
+    thumb: "/projects/logos/bf.png",
+    logo: "/projects/logos/bf.png",
+    images: ["/projects/betfair.png"],
+    website: "https://bit.ly/3w7Lakd",
+    content: {
+      title: "Details",
+      content:
+        "<p>At my current employer Flutter I have worked on the new Betfair website and apps. This meant working in React Native and Node JS to fix bugs in the Bet Fair code base and make changes to prepare the codebase to be used for Sky Bet too.</p><p>Due to the Sky Bet website and apps being built from the same code base as Betfair I implemented a way of differentiating between the 2 brands by using Chef to server a file onto the different servers for Betfair and Sky Bet. This file was then added to the Redux store so features can be toggled across the 2 brands to ensure that they feel unique and different from each other.</p>",
+    },
+  },
+  {
     id: "movie",
     title: "Movie DB",
     categories: "React, Next.js",
@@ -25,7 +53,6 @@ const projects = [
       "/projects/headless-cms-october.png",
     ],
     github: "https://github.com/dstokesy/Headless-CMS",
-    website: "https://headless-cms-dstokesy.vercel.app",
     content: {
       title: "Details",
       content:
@@ -71,7 +98,7 @@ const projects = [
     content: {
       title: "Details",
       content:
-        "<p>Soon to be launched my latest project I am lead developer on at Rejuvenate Digital is a rebuild of the Snactuary Bathrooms website, a site I built over 8 years previously. The main need for a new website was to upgrade to a new CMS system and improve on page speed to help improve organic traffic to the website.</p><p>When the previous Sanctuary Bathrooms website site launch there was a large increase in traffic to the website and the conversion rate also improved so preserving and improving this has been vital to the new website.</p><p>Analysing how their existing website was used by customers was important to planning the new website and optimizing buying journeys.</p><p>Making better use of Algolia Search has already led to better load times and by using a queue system to push updates to algolia has lead to a better experience for the client managing their products.</p><p>To achieve the goals of this project I used the latest version of October CMS and techinques to improve page speed I had previous used on the Mercedez Benz project.</p>",
+        "<p>The final project I lead development on at Rejuvenate Digital is a rebuild of the Snactuary Bathrooms website, a site I built over 8 years previously. The main need for a new website was to upgrade to a new CMS system and improve on page speed to help improve organic traffic to the website.</p><p>When the previous Sanctuary Bathrooms website site launch there was a large increase in traffic to the website and the conversion rate also improved so preserving and improving this has been vital to the new website.</p><p>Analysing how their existing website was used by customers was important to planning the new website and optimizing buying journeys.</p><p>Making better use of Algolia Search has already led to better load times and by using a queue system to push updates to algolia has lead to a better experience for the client managing their products.</p><p>To achieve the goals of this project I used the latest version of October CMS and techinques to improve page speed I had previous used on the Mercedez Benz project.</p>",
     },
   },
   {
@@ -90,8 +117,8 @@ const projects = [
   },
   {
     id: "gf",
-    title: "Glamour Fans",
-    categories: "React",
+    title: "Kinq",
+    categories: "React, Next.js",
     thumb: "/projects/logos/gf.png",
     logo: "/projects/logos/gf.png",
     images: ["/projects/gf-desktop.png"],
@@ -99,7 +126,7 @@ const projects = [
     content: {
       title: "Details",
       content:
-        "<p>At Rejuvenate Digital I also assist the team on a the buidling of a new social media platform. The platform allows users to post content, follow users and chat whilst having different types of account which allow restrict features. Safe guarding features to prevent underage access and content have also been implemented in this project.</p><p>This project isn't in production yet, however a signup form to gain users before the website is launch has been built in NextJs and can be visited using the link above.</p><p>This project was built solely using NextJs, Redux, Laravel and Laravel Nova.</p>",
+        "<p>At Rejuvenate Digital I was a key part of the development team on the buidling of a new social media platform. The platform allows users to post content, follow users and chat whilst having different types of account which allow restrict features. Safe guarding features to prevent underage access and content have also been implemented in this project.</p><p>This project isn't in production yet, however a signup form to gain users before the website is launch has been built in NextJs and can be visited using the link above.</p><p>This project was built solely using NextJs, Redux, Laravel and Laravel Nova.</p>",
     },
   },
   {
