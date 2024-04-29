@@ -35,7 +35,7 @@ export default function Index() {
               <br />
               <HeadingLine>With 10+ years experience</HeadingLine>
               <br />
-              <HeadingLine>Specialising in JavaScript, React, React Native, Redux,</HeadingLine>
+              <HeadingLine>Specialising in JavaScript, TypeScript, React, React Native, Redux,</HeadingLine>
               <br />
               <HeadingLine subLine="plus CMS and E-commerce">
                 CSS & PHP
